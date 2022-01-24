@@ -1,0 +1,34 @@
+Fields in the form
+First name		     Only Alphabet
+Last name		     Only Alphabet
+Company name		     Only Alphabet
+Email ID                     Alphanumeric
+Phone number		     Only digits
+
+//OOPs concept
+Inheritance :
+•	Parent Class   –   Pattern format
+•	Child Class	  –   Functions that access those pattern format
+•	3 sub classes –  for printing error msg
+Abstraction :
+One abstract class with 3 abstract methods for printing error msg.
+Polymorphism : 
+Overriding --> one method for printing name error msg and a subclass with same method name for printing company error msg.
+Encapsulation : 
+•	Binding data with functions acting on that data.
+•	Getters and setters method
+
+
+//Code concept
+Pattern_Format Class
+Patterns of
+•	Alphabet
+•	Alphanumeric
+•	digits	
+Validation Class extends Pattern_Format Class
+Functions for validating
+•	Alphabet
+•	Alphanumeric
+•	digits
+if the given value not matches the pattern then displaying_error_msg functions of each classes will be called.
+
