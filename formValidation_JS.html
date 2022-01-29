@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation using JavaScript</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+      }
+    label {
+        width: 150px;
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+        text-align: right;
+}  
+    input[type = text],input[type = date] {
+        border-spacing: "15";
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-left: 80px ;
+        }
+    input[type=submit]{
+        margin-left: 350px ;
+        background-color: green;
+    }    
+    body{
+        margin-left: 80px ;
+        background-color: #fff0e9;
+        }
+    .button{
+      margin-left: 50px ;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+    }    
+</style>
+<body>
+    <h1>Form Validation using JavaScript</h1>
+<form id="form1" method="post">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" placeholder ="Priyanka" required><br><br><div id="fnameErrMsg"></div>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" placeholder= "'Rai' or 'Initial'" ><br><br><div id="lnameErrMsg"></div>
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email" maxlength="45" size="45" placeholder="example@gmail.com || example@abc.co.in"required><br><br><div id="emailErrMsg"></div>
+  <label for="dob">Date of Birth:</label>
+  <input type="date" id="dob" name="dob" required><button type="button" class="button" onclick="object.validatingDateOfBirth()">Set</button><div id="age"></div><br><br>
+  <label for="phoneno">Phone:</label>
+  <input type="text" id="phoneno" minlength="10" maxlength="10" size="10" placeholder="Phone Number" required><br><br><div id="phoneErrMsg"></div>
+  <input type="submit" value="Submit">
+</form>
+<script src="FormValidation.js"></script>
+</body>
+</html>
